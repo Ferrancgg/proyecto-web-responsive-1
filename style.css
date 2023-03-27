@@ -1,0 +1,41 @@
+:root{
+    --colorGray: rgb(231, 223, 223);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fg-container-telf{
+    background-color: var(--colorGray);
+
+}
+.fg-nav-container{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.fg-navbar{
+    width: 25%;
+    display: flex ;
+    justify-content:space-evenly;
+    align-items: center;
+   
+}
+.fg-carrito{
+    width: 30px;
+}
+.fg-titulo{
+    text-align: center;
+}
+.fg-cabecera{
+    width:500px;
+   
+    background-image:"https://res.cloudinary.com/di49fnkc8/image/upload/v1679929496/web%20fotos/foto-retrato_color_vrj9id.jpg";
+    background-repeat: no-repeat;
+    background-size: cover;
+}
