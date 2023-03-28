@@ -1,5 +1,8 @@
+
 :root{
-    --colorGray: rgb(231, 223, 223);
+    --colorGray: rgb(255, 255, 255);
+    --colorTitle: rgb(20, 132, 211);
+   
 }
 
 *{
@@ -8,19 +11,23 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Montserrat', sans-serif;
+    background-color: rgb(255, 255, 255);
 }
 
 .fg-container-telf{
+    
     background-color: var(--colorGray);
 
 }
 .fg-nav-container{
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: flex;
     flex-direction:row;
     justify-content: space-between;
 }
 .fg-navbar{
-    width: 25%;
+    width: 40%;
     display: flex ;
     justify-content:space-evenly;
     align-items: center;
@@ -28,14 +35,185 @@
 }
 .fg-carrito{
     width: 30px;
+    padding-right: 25px;
 }
-.fg-titulo{
+/* .fg-titulo{
     text-align: center;
-}
+    color:var(--colorTitle)
+} */
+
 .fg-cabecera{
-    width:500px;
+    
    
-    background-image:"https://res.cloudinary.com/di49fnkc8/image/upload/v1679929496/web%20fotos/foto-retrato_color_vrj9id.jpg";
+    background-image:url("https://res.cloudinary.com/di49fnkc8/image/upload/v1679929496/web%20fotos/foto-retrato_color_vrj9id.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 550px;
+    color:var(--colorTitle)
+
 }
+
+/* /////PORTADA/// */
+
+.fg-container-portada span{
+    font-family: 'Delicious Handrawn', cursive;
+    color: rgb(6, 111, 111);
+}
+.fg-container-portada{
+    background-color: rgb(32, 46, 70);
+}
+
+.fg-grid{display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7,1fr);
+}
+
+.fg-imagen{
+    height: 100%;
+    width: 100%;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+.fg-arte{
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    
+    font-size: 70px;
+    text-align: end;
+}
+.fg-title{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 7;
+   
+    font-size: 50px;
+    text-align: center;
+    
+
+
+}
+.fg-artist-name{
+    grid-column-start: 4;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 2;
+   
+    font-size: 60px;
+    text-align: center;
+  
+    
+    
+}
+.fg-subtitle{
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 5;
+    grid-row-end: 6;
+   
+    font-size: 70px;
+    
+}
+
+/* ////GALERIA */
+.fg-galeria{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.fg-grid-galeria{display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10,1fr);
+    gap:15px;
+    width: 80%;
+    
+}
+
+.fg-foto{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    
+ 
+}
+.fg-imagen1{
+    grid-column-start:1 ;
+    grid-column-end: 3;
+    grid-row-start:1 ;
+    grid-row-end: 3;
+  
+}
+.fg-imagen2{
+    grid-column-start:3 ;
+    grid-column-end:4 ;
+    grid-row-start:1 ;
+    grid-row-end: 2;
+  
+}
+.fg-imagen3{
+    grid-column-start: 3;
+    grid-column-end:4 ;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  
+}
+.fg-imagen4{
+    grid-column-start:1 ;
+    grid-column-end:2;
+    grid-row-start: 3;
+    grid-row-end:4 ;
+  
+}
+.fg-imagen5{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  
+}
+.fg-imagen6{
+    grid-column-start:2 ;
+    grid-column-end:4 ;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  
+}
+.fg-imagen7{
+    grid-column-start: 1;
+    grid-column-end:3 ;
+    grid-row-start: 5;
+    grid-row-end:7;
+  
+}
+.fg-imagen12{
+    grid-column-start: 2;
+    grid-column-end:4 ;
+    grid-row-start:7 ;
+    grid-row-end: 9;
+  
+}
+.fg-imagen13{
+    grid-column-start:1 ;
+    grid-column-end: 3;
+    grid-row-start:9 ;
+    grid-row-end:11 ;
+  
+}
+.fg-footer span{
+    font-family: 'Delicious Handrawn', cursive;
+    color: rgb(6, 111, 111);
+    margin-right: 20px;
+
+}
+
+
+
+
